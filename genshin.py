@@ -79,8 +79,8 @@ class Sign(Base):
 
     @staticmethod
     def get_ds():
-        # v2.3.0-web @povsister & @journey-ad
-        n = 'h8w582wxwgqvahcdkpvdhbh2w9casgfl'
+        # 2.4.0
+        n = 'pbcfcvnfsm5s2w4x3lsq8caor7v8nlqm'
         i = str(int(time.time()))
         r = ''.join(random.sample(string.ascii_lowercase + string.digits, 6))
         c = hexdigest('salt=' + n + '&t=' + i + '&r=' + r)
